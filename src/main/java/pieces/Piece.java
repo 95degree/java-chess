@@ -12,9 +12,9 @@ public class Piece {
         this.representation = classifyRepresentation();
     }
 
-    private char classifyRepresentation(){
+    private char classifyRepresentation() {
         char representation = type.getRepresentation();
-        if(isBlack())
+        if (isBlack())
             return Character.toUpperCase(representation);
 
         return representation;
@@ -77,14 +77,14 @@ public class Piece {
     }
 
     public boolean isWhite() {
-        return color == Color.WHITE;
+        return Color.WHITE == color;
     }
 
     public boolean isBlack() {
-        return color == Color.BLACK;
+        return Color.BLACK == color;
     }
 
     public boolean isPawn() {
-        return type == Type.PAWN;
+        return Type.PAWN == type;
     }
 }
